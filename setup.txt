@@ -1,0 +1,18 @@
+1. Open the task folder in VS Code or desired IDE
+2. Create a Virtual Environment
+    - python3 -m venv venv
+    - source /Users/ankushpgowda/Desktop/dpdzero_task/venv/bin/activate (look for activate path in your pc)
+3. Pip all the modules from requirement file
+    - pip install -r requirements.txt
+4. Export my api key setup for sql to work. (Ask me to generate new password)
+    - export DATABASE_URL="postgresql://ankush:AgmIrXUhvSQvMZBFYZOkxg@glazed-sawfish-10868.j77.aws-ap-south-1.cockroachlabs.cloud:26257/performance_db?sslmode=verify-full"
+5. Delete csv files inside dataset and dataset/output, if present
+6. Run the Streamlit app
+    - streamlit run app.py
+7. You have original dataset in folder `original` and sample dataset of 29/04/2025 inside `sample`. Use date by date to see dynamic working of the assignment.
+
+
+So I hope this assignment was perfect to showcase my problem-solving skills. Thank you for giving me this opportunity.
++91-7259120176
+ankushpgowda06@gmail.com
+https://github.com/ankushpgowda06

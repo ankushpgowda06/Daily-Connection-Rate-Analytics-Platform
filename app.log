@@ -1,0 +1,188 @@
+2025-05-02 08:02:37,852 - INFO - core.data_ingestor - loading all the table using pandas
+2025-05-02 08:02:37,872 - INFO - core.data_validating - starting the validation for agent_roster table
+2025-05-02 08:02:37,872 - INFO - core.data_validating - done concating agent_roster
+2025-05-02 08:02:37,876 - INFO - core.data_validating - no null found in agent_roster table
+2025-05-02 08:02:37,876 - INFO - core.data_validating - searching for duplicates in column ['agent_id'] for agent_roster table
+2025-05-02 08:02:37,878 - INFO - core.data_validating - found 0 duplicates in column agent_id
+2025-05-02 08:02:37,878 - INFO - core.data_validating - done validating agent_roster table
+2025-05-02 08:02:37,881 - INFO - core.data_validating - saved the agent_roster.csv inside dataset folder
+2025-05-02 08:02:37,881 - INFO - core.data_validating - starting the validation for call_logs table
+2025-05-02 08:02:37,881 - INFO - core.data_validating - done concating call_logs
+2025-05-02 08:02:37,881 - INFO - core.data_validating - no null found in call_logs table
+2025-05-02 08:02:37,881 - INFO - core.data_validating - searching for duplicates in column ['call_id'] for call_logs table
+2025-05-02 08:02:37,882 - INFO - core.data_validating - found 11 duplicates in column call_id
+2025-05-02 08:02:37,884 - INFO - core.data_validating - dropped those duplicates
+2025-05-02 08:02:37,884 - INFO - core.data_validating - done validating call_logs table
+2025-05-02 08:02:37,886 - INFO - core.data_validating - saved the call_logs.csv inside dataset folder
+2025-05-02 08:02:37,886 - INFO - core.data_validating - starting the validation for disposition_summary table
+2025-05-02 08:02:37,886 - INFO - core.data_validating - done concating disposition_summary
+2025-05-02 08:02:37,887 - INFO - core.data_validating - no null found in disposition_summary table
+2025-05-02 08:02:37,887 - INFO - core.data_validating - searching for duplicates in column ['agent_id', 'call_date'] for disposition_summary table
+2025-05-02 08:02:37,887 - INFO - core.data_validating - found 0 duplicates in column agent_id
+2025-05-02 08:02:37,887 - INFO - core.data_validating - done validating disposition_summary table
+2025-05-02 08:02:37,887 - INFO - core.data_validating - saved the disposition_summary.csv inside dataset folder
+2025-05-02 08:02:37,887 - INFO - core.table_joining - starting up the joiner to join all 3 tables
+2025-05-02 08:02:37,896 - INFO - core.table_joining - joined agent_roster.csv and call_logs.csv into merged
+2025-05-02 08:02:37,897 - INFO - core.table_joining - joined merged and disposition_summary into final_join
+2025-05-02 08:02:37,904 - INFO - core.table_joining - saved the final csv inside dataset folder as final_join.csv
+2025-05-02 08:02:37,904 - INFO - core.table_joining - closing the joiner
+2025-05-02 08:02:37,906 - INFO - core.feature_engineering - starting the features engineer
+2025-05-02 08:02:37,907 - INFO - core.feature_engineering - calculated total calls made by each agent
+2025-05-02 08:02:37,909 - INFO - core.feature_engineering - calculated total unique loans each agent attended
+2025-05-02 08:02:37,909 - INFO - core.feature_engineering - calculated total completed calls by each agent
+2025-05-02 08:02:37,911 - INFO - core.feature_engineering - calculated completed calls rate for each agent
+2025-05-02 08:02:37,913 - INFO - core.feature_engineering - calculated average time spent on calls for each agent
+2025-05-02 08:02:37,915 - INFO - core.feature_engineering - checking agents attendance
+2025-05-02 08:02:37,917 - INFO - core.feature_engineering - storing the agent performance summary csv inside output folder which is in dataset folder
+2025-05-02 08:02:37,918 - INFO - core.report_metdata - starting metadata extractor
+2025-05-02 08:02:37,918 - INFO - core.report_metdata - got date metadata
+2025-05-02 08:02:37,920 - INFO - core.report_metdata - got name and connect_rate metadata of top performer on 2025-04-28
+2025-05-02 08:02:37,920 - INFO - core.report_metdata - got total_agents present on 2025-04-28
+2025-05-02 08:02:37,920 - INFO - core.report_metdata - got average calls made on 2025-04-28
+2025-05-02 08:02:37,920 - INFO - core.report_metdata - closing metadata extractor
+2025-05-02 08:02:39,112 - INFO - core.database_mangement - initiating the connection
+2025-05-02 08:04:33,220 - INFO - core.data_ingestor - loading all the table using pandas
+2025-05-02 08:04:33,235 - INFO - core.data_validating - starting the validation for agent_roster table
+2025-05-02 08:04:33,235 - INFO - core.data_validating - done concating agent_roster
+2025-05-02 08:04:33,237 - INFO - core.data_validating - no null found in agent_roster table
+2025-05-02 08:04:33,237 - INFO - core.data_validating - searching for duplicates in column ['agent_id'] for agent_roster table
+2025-05-02 08:04:33,240 - INFO - core.data_validating - found 0 duplicates in column agent_id
+2025-05-02 08:04:33,240 - INFO - core.data_validating - done validating agent_roster table
+2025-05-02 08:04:33,242 - INFO - core.data_validating - saved the agent_roster.csv inside dataset folder
+2025-05-02 08:04:33,242 - INFO - core.data_validating - starting the validation for call_logs table
+2025-05-02 08:04:33,242 - INFO - core.data_validating - done concating call_logs
+2025-05-02 08:04:33,242 - INFO - core.data_validating - no null found in call_logs table
+2025-05-02 08:04:33,242 - INFO - core.data_validating - searching for duplicates in column ['call_id'] for call_logs table
+2025-05-02 08:04:33,243 - INFO - core.data_validating - found 11 duplicates in column call_id
+2025-05-02 08:04:33,245 - INFO - core.data_validating - dropped those duplicates
+2025-05-02 08:04:33,245 - INFO - core.data_validating - done validating call_logs table
+2025-05-02 08:04:33,247 - INFO - core.data_validating - saved the call_logs.csv inside dataset folder
+2025-05-02 08:04:33,247 - INFO - core.data_validating - starting the validation for disposition_summary table
+2025-05-02 08:04:33,247 - INFO - core.data_validating - done concating disposition_summary
+2025-05-02 08:04:33,248 - INFO - core.data_validating - no null found in disposition_summary table
+2025-05-02 08:04:33,248 - INFO - core.data_validating - searching for duplicates in column ['agent_id', 'call_date'] for disposition_summary table
+2025-05-02 08:04:33,248 - INFO - core.data_validating - found 0 duplicates in column agent_id
+2025-05-02 08:04:33,248 - INFO - core.data_validating - done validating disposition_summary table
+2025-05-02 08:04:33,248 - INFO - core.data_validating - saved the disposition_summary.csv inside dataset folder
+2025-05-02 08:04:33,249 - INFO - core.table_joining - starting up the joiner to join all 3 tables
+2025-05-02 08:04:33,257 - INFO - core.table_joining - joined agent_roster.csv and call_logs.csv into merged
+2025-05-02 08:04:33,259 - INFO - core.table_joining - joined merged and disposition_summary into final_join
+2025-05-02 08:04:33,267 - INFO - core.table_joining - saved the final csv inside dataset folder as final_join.csv
+2025-05-02 08:04:33,267 - INFO - core.table_joining - closing the joiner
+2025-05-02 08:04:33,269 - INFO - core.feature_engineering - starting the features engineer
+2025-05-02 08:04:33,270 - INFO - core.feature_engineering - calculated total calls made by each agent
+2025-05-02 08:04:33,272 - INFO - core.feature_engineering - calculated total unique loans each agent attended
+2025-05-02 08:04:33,273 - INFO - core.feature_engineering - calculated total completed calls by each agent
+2025-05-02 08:04:33,275 - INFO - core.feature_engineering - calculated completed calls rate for each agent
+2025-05-02 08:04:33,277 - INFO - core.feature_engineering - calculated average time spent on calls for each agent
+2025-05-02 08:04:33,278 - INFO - core.feature_engineering - checking agents attendance
+2025-05-02 08:04:33,282 - INFO - core.feature_engineering - storing the agent performance summary csv inside output folder which is in dataset folder
+2025-05-02 08:04:33,283 - INFO - core.report_metdata - starting metadata extractor
+2025-05-02 08:04:33,283 - INFO - core.report_metdata - got date metadata
+2025-05-02 08:04:33,285 - INFO - core.report_metdata - got name and connect_rate metadata of top performer on 2025-04-28
+2025-05-02 08:04:33,285 - INFO - core.report_metdata - got total_agents present on 2025-04-28
+2025-05-02 08:04:33,285 - INFO - core.report_metdata - got average calls made on 2025-04-28
+2025-05-02 08:04:33,285 - INFO - core.report_metdata - closing metadata extractor
+2025-05-02 08:04:33,694 - INFO - core.database_mangement - initiating the connection
+2025-05-02 08:04:33,809 - INFO - core.database_mangement - inserted the topper Rohan  Verma
+2025-05-02 08:04:33,925 - INFO - core.database_mangement - app.py requested to fetch all the data
+2025-05-02 08:04:34,119 - INFO - __main__ - plotted the graph day vs rate
+2025-05-02 08:04:34,122 - INFO - __main__ - displayed the requested output
+2025-05-02 08:06:15,521 - INFO - core.data_ingestor - loading all the table using pandas
+2025-05-02 08:06:15,534 - INFO - core.data_validating - starting the validation for agent_roster table
+2025-05-02 08:06:15,535 - INFO - core.data_validating - done concating agent_roster
+2025-05-02 08:06:15,536 - INFO - core.data_validating - no null found in agent_roster table
+2025-05-02 08:06:15,536 - INFO - core.data_validating - searching for duplicates in column ['agent_id'] for agent_roster table
+2025-05-02 08:06:15,539 - INFO - core.data_validating - found 0 duplicates in column agent_id
+2025-05-02 08:06:15,539 - INFO - core.data_validating - done validating agent_roster table
+2025-05-02 08:06:15,541 - INFO - core.data_validating - saved the agent_roster.csv inside dataset folder
+2025-05-02 08:06:15,541 - INFO - core.data_validating - starting the validation for call_logs table
+2025-05-02 08:06:15,541 - INFO - core.data_validating - done concating call_logs
+2025-05-02 08:06:15,542 - INFO - core.data_validating - no null found in call_logs table
+2025-05-02 08:06:15,542 - INFO - core.data_validating - searching for duplicates in column ['call_id'] for call_logs table
+2025-05-02 08:06:15,542 - INFO - core.data_validating - found 11 duplicates in column call_id
+2025-05-02 08:06:15,545 - INFO - core.data_validating - dropped those duplicates
+2025-05-02 08:06:15,545 - INFO - core.data_validating - done validating call_logs table
+2025-05-02 08:06:15,548 - INFO - core.data_validating - saved the call_logs.csv inside dataset folder
+2025-05-02 08:06:15,548 - INFO - core.data_validating - starting the validation for disposition_summary table
+2025-05-02 08:06:15,548 - INFO - core.data_validating - done concating disposition_summary
+2025-05-02 08:06:15,548 - INFO - core.data_validating - no null found in disposition_summary table
+2025-05-02 08:06:15,548 - INFO - core.data_validating - searching for duplicates in column ['agent_id', 'call_date'] for disposition_summary table
+2025-05-02 08:06:15,548 - INFO - core.data_validating - found 0 duplicates in column agent_id
+2025-05-02 08:06:15,548 - INFO - core.data_validating - done validating disposition_summary table
+2025-05-02 08:06:15,549 - INFO - core.data_validating - saved the disposition_summary.csv inside dataset folder
+2025-05-02 08:06:15,549 - INFO - core.table_joining - starting up the joiner to join all 3 tables
+2025-05-02 08:06:15,558 - INFO - core.table_joining - joined agent_roster.csv and call_logs.csv into merged
+2025-05-02 08:06:15,560 - INFO - core.table_joining - joined merged and disposition_summary into final_join
+2025-05-02 08:06:15,570 - INFO - core.table_joining - saved the final csv inside dataset folder as final_join.csv
+2025-05-02 08:06:15,570 - INFO - core.table_joining - closing the joiner
+2025-05-02 08:06:15,571 - INFO - core.feature_engineering - starting the features engineer
+2025-05-02 08:06:15,572 - INFO - core.feature_engineering - calculated total calls made by each agent
+2025-05-02 08:06:15,574 - INFO - core.feature_engineering - calculated total unique loans each agent attended
+2025-05-02 08:06:15,575 - INFO - core.feature_engineering - calculated total completed calls by each agent
+2025-05-02 08:06:15,577 - INFO - core.feature_engineering - calculated completed calls rate for each agent
+2025-05-02 08:06:15,578 - INFO - core.feature_engineering - calculated average time spent on calls for each agent
+2025-05-02 08:06:15,580 - INFO - core.feature_engineering - checking agents attendance
+2025-05-02 08:06:15,583 - INFO - core.feature_engineering - storing the agent performance summary csv inside output folder which is in dataset folder
+2025-05-02 08:06:15,584 - INFO - core.report_metdata - starting metadata extractor
+2025-05-02 08:06:15,585 - INFO - core.report_metdata - got date metadata
+2025-05-02 08:06:15,586 - INFO - core.report_metdata - got name and connect_rate metadata of top performer on 2025-04-28
+2025-05-02 08:06:15,586 - INFO - core.report_metdata - got total_agents present on 2025-04-28
+2025-05-02 08:06:15,586 - INFO - core.report_metdata - got average calls made on 2025-04-28
+2025-05-02 08:06:15,586 - INFO - core.report_metdata - closing metadata extractor
+2025-05-02 08:06:15,974 - INFO - core.database_mangement - initiating the connection
+2025-05-02 08:06:16,092 - INFO - core.database_mangement - inserted the topper Rohan  Verma
+2025-05-02 08:06:16,209 - INFO - core.database_mangement - app.py requested to fetch all the data
+2025-05-02 08:06:16,393 - INFO - __main__ - plotted the graph day vs rate
+2025-05-02 08:06:16,396 - INFO - __main__ - displayed the requested output
+2025-05-02 08:06:50,120 - INFO - core.data_ingestor - loading all the table using pandas
+2025-05-02 08:06:50,128 - INFO - core.data_validating - starting the validation for agent_roster table
+2025-05-02 08:06:50,128 - INFO - core.data_validating - starting to concat old csv with new csv for filename agent_roster
+2025-05-02 08:06:50,130 - INFO - core.data_validating - done concating agent_roster
+2025-05-02 08:06:50,131 - INFO - core.data_validating - no null found in agent_roster table
+2025-05-02 08:06:50,131 - INFO - core.data_validating - searching for duplicates in column ['agent_id'] for agent_roster table
+2025-05-02 08:06:50,132 - INFO - core.data_validating - found 20 duplicates in column agent_id
+2025-05-02 08:06:50,133 - INFO - core.data_validating - dropped those duplicates
+2025-05-02 08:06:50,133 - INFO - core.data_validating - done validating agent_roster table
+2025-05-02 08:06:50,136 - INFO - core.data_validating - saved the agent_roster.csv inside dataset folder
+2025-05-02 08:06:50,136 - INFO - core.data_validating - starting the validation for call_logs table
+2025-05-02 08:06:50,136 - INFO - core.data_validating - starting to concat old csv with new csv for filename call_logs
+2025-05-02 08:06:50,138 - INFO - core.data_validating - done concating call_logs
+2025-05-02 08:06:50,139 - INFO - core.data_validating - no null found in call_logs table
+2025-05-02 08:06:50,139 - INFO - core.data_validating - searching for duplicates in column ['call_id'] for call_logs table
+2025-05-02 08:06:50,139 - INFO - core.data_validating - found 0 duplicates in column call_id
+2025-05-02 08:06:50,139 - INFO - core.data_validating - done validating call_logs table
+2025-05-02 08:06:50,144 - INFO - core.data_validating - saved the call_logs.csv inside dataset folder
+2025-05-02 08:06:50,144 - INFO - core.data_validating - starting the validation for disposition_summary table
+2025-05-02 08:06:50,144 - INFO - core.data_validating - starting to concat old csv with new csv for filename disposition_summary
+2025-05-02 08:06:50,145 - INFO - core.data_validating - done concating disposition_summary
+2025-05-02 08:06:50,146 - INFO - core.data_validating - no null found in disposition_summary table
+2025-05-02 08:06:50,146 - INFO - core.data_validating - searching for duplicates in column ['agent_id', 'call_date'] for disposition_summary table
+2025-05-02 08:06:50,146 - INFO - core.data_validating - found 20 duplicates in column agent_id
+2025-05-02 08:06:50,147 - INFO - core.data_validating - dropped those duplicates
+2025-05-02 08:06:50,147 - INFO - core.data_validating - done validating disposition_summary table
+2025-05-02 08:06:50,148 - INFO - core.data_validating - saved the disposition_summary.csv inside dataset folder
+2025-05-02 08:06:50,148 - INFO - core.table_joining - starting up the joiner to join all 3 tables
+2025-05-02 08:06:50,151 - INFO - core.table_joining - joined agent_roster.csv and call_logs.csv into merged
+2025-05-02 08:06:50,152 - INFO - core.table_joining - joined merged and disposition_summary into final_join
+2025-05-02 08:06:50,158 - INFO - core.table_joining - saved the final csv inside dataset folder as final_join.csv
+2025-05-02 08:06:50,158 - INFO - core.table_joining - closing the joiner
+2025-05-02 08:06:50,160 - INFO - core.feature_engineering - starting the features engineer
+2025-05-02 08:06:50,161 - INFO - core.feature_engineering - calculated total calls made by each agent
+2025-05-02 08:06:50,163 - INFO - core.feature_engineering - calculated total unique loans each agent attended
+2025-05-02 08:06:50,163 - INFO - core.feature_engineering - calculated total completed calls by each agent
+2025-05-02 08:06:50,166 - INFO - core.feature_engineering - calculated completed calls rate for each agent
+2025-05-02 08:06:50,167 - INFO - core.feature_engineering - calculated average time spent on calls for each agent
+2025-05-02 08:06:50,169 - INFO - core.feature_engineering - checking agents attendance
+2025-05-02 08:06:50,174 - INFO - core.feature_engineering - storing the agent performance summary csv inside output folder which is in dataset folder
+2025-05-02 08:06:50,176 - INFO - core.report_metdata - starting metadata extractor
+2025-05-02 08:06:50,176 - INFO - core.report_metdata - got date metadata
+2025-05-02 08:06:50,177 - INFO - core.report_metdata - got name and connect_rate metadata of top performer on 2025-04-29
+2025-05-02 08:06:50,177 - INFO - core.report_metdata - got total_agents present on 2025-04-29
+2025-05-02 08:06:50,177 - INFO - core.report_metdata - got average calls made on 2025-04-29
+2025-05-02 08:06:50,177 - INFO - core.report_metdata - closing metadata extractor
+2025-05-02 08:06:50,475 - INFO - core.database_mangement - initiating the connection
+2025-05-02 08:06:50,595 - INFO - core.database_mangement - inserted the topper Ayaan  Mehra
+2025-05-02 08:06:50,709 - INFO - core.database_mangement - app.py requested to fetch all the data
+2025-05-02 08:06:50,753 - INFO - __main__ - plotted the graph day vs rate
+2025-05-02 08:06:50,759 - INFO - __main__ - displayed the requested output
